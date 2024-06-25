@@ -12,7 +12,7 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Evangelische Termine',
+    'title' => 'Evangelische Termine - RSYS modified',
     'description' => 'Anzeige des Terminkalenders der Vernetzten Kirche in der Ev.-Luth. Kirche in Bayern und weiteren teilnehmenden evangelischen Landeskirchen.',
     'category' => 'plugin',
     'author' => 'Frank Berger',
@@ -25,7 +25,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '2.2.7',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-11.9.99',
+            'typo3' => '10.4.0-12.9.99',
         ],
         'conflicts' => [
         ],

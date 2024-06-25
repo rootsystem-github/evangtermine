@@ -1,20 +1,18 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-	die('Access denied.');
-}
+defined('TYPO3') or die('Access denied.');
 
 
-$extensionkey = 'evangtermine';
+$extensionkey = 'Evangtermine';
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
 	$extensionkey,
 	'List',
 	array(
-		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'list, show, genericinfo'
+		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'list,show,genericinfo'
 	),
 	// non-cacheable actions
 	array(
-		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'list, show, genericinfo'
+		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'list,show,genericinfo'
 	)
 );
 
@@ -22,7 +20,7 @@ $extensionkey = 'evangtermine';
 	$extensionkey,
 	'Detail',
 	array(
-		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'show, genericinfo'
+		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'show,genericinfo'
 	),
 	// non-cacheable actions
 	array(
@@ -34,11 +32,11 @@ $extensionkey = 'evangtermine';
 	$extensionkey,
 	'Teaser',
 	array(
-		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'teaser, show, genericinfo'
+		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'teaser,show,genericinfo'
 	),
 	// non-cacheable actions
 	array(
-		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'teaser, show, genericinfo'
+		ArbkomEKvW\Evangtermine\Controller\EventcontainerController::class => 'teaser,show,genericinfo'
 	)
 );
 

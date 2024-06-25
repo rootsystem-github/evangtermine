@@ -618,7 +618,7 @@ class EtKeys extends AbstractValueObject
      * (non-PHPdoc)
      * @see \TYPO3\CMS\Extbase\DomainObject\AbstractValueObject::getValue()
      */
-    public function getValue()
+    public function getValue(): string
     {
         foreach (get_object_vars($this) as $key => $value) {
             if (in_array($key, $this->allowedKeys) && $value !== null) {

@@ -235,7 +235,7 @@ class EventcontainerController extends ActionController
      * - retrieve XML data
      * - hand it to view
      */
-    public function listAction()
+    public function listAction(): \Psr\Http\Message\ResponseInterface
     {
         if (!isset($this->session['etkeysJson'])) {
             // no session data exists. set up fresh container object for params and load settings
@@ -285,12 +285,13 @@ class EventcontainerController extends ActionController
 
         // Debugging only
         // $this->view->assign('request', $this->request->getArguments());
+	    return $this->htmlResponse();
     }
 
     /**
      * action teaser
      */
-    public function teaserAction()
+    public function teaserAction(): \Psr\Http\Message\ResponseInterface
     {
         // teaser needs no session, just params from the settings array
         $etkeysTs = $this->getNewFromSettings();
@@ -301,12 +302,14 @@ class EventcontainerController extends ActionController
         // hand model data to the view
         $this->view->assign('events', $evntContainer);
         $this->view->assign('pageId', $GLOBALS['TSFE']->id);
+		
+		return $this->htmlResponse();
     }
 
     /**
      * action show
      */
-    public function showAction()
+    public function showAction(): \Psr\Http\Message\ResponseInterface
     {
         $etkeys = GeneralUtility::makeInstance(EtKeys::class);
 
@@ -327,6 +330,8 @@ class EventcontainerController extends ActionController
             $this->addFlashMessage('Keine Event-ID übergeben', '', AbstractMessage::ERROR);
             $this->redirect('genericinfo');
         }
+		
+		return $this->htmlResponse();
     }
 
     /**
