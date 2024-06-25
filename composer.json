@@ -23,6 +23,12 @@
             "email": "christoph.roth@ekvw.de",
             "role": "Developer",
             "homepage": "http://www.ekvw.de/kommunikation/"
+        },
+      {
+            "name": "Erwin Knoll",
+            "email": "typo3coding@rootsystem.de",
+            "role": "Developer",
+            "homepage": "https://www.rootsystem.de"
         }
     ],
     "require": {
