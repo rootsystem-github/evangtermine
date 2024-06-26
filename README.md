@@ -17,11 +17,10 @@ It is a tool to integrate the "evangelische-termine.de" Event Database created b
 Here on GitHub all development versions are hosted where it is not guaranteed that those
 will always work.
 
-The evangtermine TYPO3 extension is developed by:
+The evangtermine TYPO3 extension was originally developed by:
 
 Evangelische Kirche von Westfalen
 Das Landeskirchenamt
 Arbeitsbereich Kommunikation
 
-Contact: christoph.roth@ekvw.de
 
