@@ -6,23 +6,23 @@
     <sheets>
         <sDEF>
             <ROOT>
-                <TCEforms>
+                
                     <sheetTitle>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:pluginsheet.general</sheetTitle>
-                </TCEforms>
+                
                 <type>array</type>
                 <el>
                     <settings.etkey_vid>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.vid</label>
                             <config>
                                 <type>input</type>
                                 <size>20</size>
                                 <eval>trim</eval>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_vid>
                     <settings.etkey_highlight>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.highlight</label>
                             <config>
                                 <type>select</type>
@@ -38,20 +38,20 @@
                                     </numIndex>
                                 </items>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_highlight>
                     <settings.etkey_q>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.et_q</label>
                             <config>
                                 <type>input</type>
                                 <size>20</size>
                                 <eval>trim</eval>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_q>
                     <settings.etkey_eventtype>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.eventtype</label>
                             <config>
                                 <type>select</type>
@@ -61,10 +61,10 @@
                                 <itemsProcFunc>ArbkomEKvW\Evangtermine\Util\CategoryUtil->getCategories</itemsProcFunc>
                                 <default>all</default>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_eventtype>
                     <settings.etkey_people>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.people</label>
                             <config>
                                 <type>select</type>
@@ -74,10 +74,10 @@
                                 <itemsProcFunc>ArbkomEKvW\Evangtermine\Util\CategoryUtil->getGroups</itemsProcFunc>
                                 <default>all</default>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_people>
                     <settings.etkey_itemsPerPage>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.itemsPerPage</label>
                             <config>
                                 <type>input</type>
@@ -85,67 +85,67 @@
                                 <default>20</default>
                                 <eval>trim,int</eval>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_itemsPerPage>
                     <settings.evt_addprms>
-                    	<TCEforms>
+                    	
                     		<label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.addprms</label>
                     		<config>
                     			<type>input</type>
                     			<size>20</size>
                                 <eval>trim</eval>
                     		</config>
-                    	</TCEforms>
+                    	
                     </settings.evt_addprms>
                 </el>
             </ROOT>
         </sDEF>
         <cdistrict>
             <ROOT>
-                <TCEforms>
+                
                     <sheetTitle>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:pluginsheet.cdistrict</sheetTitle>
-                </TCEforms>
+                
                 <type>array</type>
                 <el>
                     <settings.etkey_region>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.region</label>
                             <config>
                                 <type>input</type>
                                 <size>20</size>
                                 <eval>trim</eval>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_region>
                     <settings.etkey_aid>
-                        <TCEforms>
+                        
                             <label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.aid</label>
                             <config>
                                 <type>input</type>
                                 <size>20</size>
                                 <eval>trim</eval>
                             </config>
-                        </TCEforms>
+                        
                     </settings.etkey_aid>
                 </el>
             </ROOT>
         </cdistrict>
         <opmode>
         	<ROOT>
-        		<TCEforms>
+        		
                     <sheetTitle>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:pluginsheet.opmode</sheetTitle>
-                </TCEforms>
+                
                 <type>array</type>
                 <el>
                 	<settings.opmode_detailpage>
-                		<TCEforms>
+                		
                 			<label>LLL:EXT:evangtermine/Resources/Private/Language/locallang.xlf:feflexform.detailpage</label>
                 			<config>
                 				<type>group</type>
                 				<internal_type>db</internal_type>
                 				<allowed>pages</allowed>
                 			</config>
-                		</TCEforms>
+                		
                 	</settings.opmode_detailpage>
                 </el>
         	</ROOT>

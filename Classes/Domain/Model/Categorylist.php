@@ -53,7 +53,7 @@ class Categorylist extends AbstractEntity
     {
         // if itemList is empty, load from session
         if (! $this->itemList) {
-            $this->itemList = $GLOBALS['TSFE']->fe_user->getKey('ses', $sessionKey);
+            $this->itemList = null;//$GLOBALS['TSFE']->fe_user->getKey('ses', $sessionKey);
 
             // if necessary, initialize it
             if (! $this->itemList) {
@@ -67,9 +67,9 @@ class Categorylist extends AbstractEntity
                 }
                 $this->itemList['items'] = $newlist;
 
-                $GLOBALS['TSFE']->fe_user->setKey('ses', $sessionKey, $this->itemList);
+                //$GLOBALS['TSFE']->fe_user->setKey('ses', $sessionKey, $this->itemList);
 
-                $GLOBALS['TSFE']->fe_user->storeSessionData();
+                //$GLOBALS['TSFE']->fe_user->storeSessionData();
             }
         }
     }

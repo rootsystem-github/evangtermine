@@ -622,6 +622,9 @@ class EtKeys extends AbstractValueObject
     {
         foreach (get_object_vars($this) as $key => $value) {
             if (in_array($key, $this->allowedKeys) && $value !== null) {
+				if($key == 'eventtype') {
+					$value = $value[0];
+				}
                 $parBlocks[] = $key . '=' . urlencode(utf8_decode($value));
             }
         }

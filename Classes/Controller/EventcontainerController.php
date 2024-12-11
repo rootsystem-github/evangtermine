@@ -142,11 +142,11 @@ class EventcontainerController extends ActionController
      * (non-PHPdoc)
      * @see \TYPO3\CMS\Extbase\Mvc\Controller\ActionController::initializeAction()
      */
-    protected function initializeAction()
+    protected function initializeAction():void
     {
-        $this->currentPluginUid = $this->configurationManager->getContentObject()->data['uid'];
+        $this->currentPluginUid = $this->request->getAttribute('currentContentObject')->data['uid'];
 
-        $this->session = $this->loadSession();
+        $this->session = null; //$this->loadSession();
 
         // if etkeys were stored before,
         if (isset($this->session['etkeysJson'])) {
@@ -263,7 +263,7 @@ class EventcontainerController extends ActionController
         if ($this->etkeys->getQ() == 'none') {
             $this->etkeys->setQ('');
         }
-        $this->saveSession();
+        //$this->saveSession();
 
         // Set up pager widget (no Widgets in Fluid ViewHelpers since TYPO3 v11!)
         $this->pager->up(
