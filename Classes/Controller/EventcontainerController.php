@@ -153,9 +153,7 @@ class EventcontainerController extends ActionController
             $this->etkeys = GeneralUtility::makeInstance(EtKeys::class);
             $this->etkeys->initFromJson($this->session['etkeysJson']);
         }
-
-        // include CSS and JS
-        $this->includeAdditionalHeaderData();
+		
     }
 
     /**

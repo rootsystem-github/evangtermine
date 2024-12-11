@@ -23,23 +23,7 @@ plugin.tx_evangtermine {
 		# uncomment the following line to enable the new Property Mapper.
 		# rewrittenPropertyMapper = 1
 	}
-	
-	settings {
-		
-		# Default jQuery UI CSS
-		jQueryUICSS = typo3conf/ext/evangtermine/Resources/Public/jquery-ui-1.11.4.custom/jquery-ui.min.css
-		
-		# Default CSS
-		CSSFile = typo3conf/ext/evangtermine/Resources/Public/CSS/default.css
-		
-		# Default jQuery
-		jQuery = typo3conf/ext/evangtermine/Resources/Public/jquery-1.11.1.min.js
-		
-		# Default jQuery UI, i18n and custom code
-		jQueryUI = typo3conf/ext/evangtermine/Resources/Public/jquery-ui-1.11.4.custom/evangtermine.js
-		
-		
-	}
+
 	
 	tslibs {
 		
@@ -72,6 +56,24 @@ plugin.tx_evangtermine {
 	
 	# solves action conflict with two plugins in one page, https://wiki.typo3.org/Exception/CMS/1313855175
 	mvc.callDefaultActionIfActionCantBeResolved = 1
+}
+
+
+page.includeCSSLibs {
+
+    # Default jQuery UI CSS
+    jQueryUICSS = EXT:evangtermine/Resources/Public/jquery-ui-1.11.4.custom/jquery-ui.min.css
+
+    # Default CSS
+    CSSFile = EXT:evangtermine/Resources/Public/CSS/default.css
+
+    # Default jQuery
+    jQuery = EXT:evangtermine/Resources/Public/jquery-1.11.1.min.js
+
+    # Default jQuery UI, i18n and custom code
+    jQueryUI = EXT:evangtermine/Resources/Public/jquery-ui-1.11.4.custom/evangtermine.js
+
+
 }
 
 plugin.tx_evangtermine._CSS_DEFAULT_STYLE (
