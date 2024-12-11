@@ -15,17 +15,17 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Evangelische Termine - RSYS modified',
     'description' => 'Anzeige des Terminkalenders der Vernetzten Kirche in der Ev.-Luth. Kirche in Bayern und weiteren teilnehmenden evangelischen Landeskirchen.',
     'category' => 'plugin',
-    'author' => 'Frank Berger',
-    'author_email' => 'fberger@sudhaus7.de',
+    'author' => 'Frank Berger / Erwin Knoll',
+    'author_email' => 'fberger@sudhaus7.de / typo3coding@rootsystem.de',
     'state' => 'stable',
     'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '2.2.8',
+    'version' => '2.2.9',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-12.9.99',
+            'typo3' => '10.4.0-13.9.99',
         ],
         'conflicts' => [
         ],

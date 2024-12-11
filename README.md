@@ -1,12 +1,7 @@
 # evangtermine
 
-
-[![Latest Stable Version](https://poser.pugx.org/sudhaus7/evangtermine/v/stable.svg)](https://extensions.typo3.org/extension/evangtermine/)
-[![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg)](https://get.typo3.org/version/11)
-[![TYPO3 10](https://img.shields.io/badge/TYPO3-10-orange.svg)](https://get.typo3.org/version/10)
-[![Total Downloads](https://poser.pugx.org/sudhaus7/evangtermine/d/total.svg)](https://packagist.org/packages/sudhaus7/evangtermine)
-[![Monthly Downloads](https://poser.pugx.org/sudhaus7/evangtermine/d/monthly)](https://packagist.org/packages/sudhaus7/evangtermine)
-
+V2.2.9
+TYPO3 V13.4
 
 Hello, this is the new home for the TYPO3 extension "evangtermine".
 
@@ -21,6 +16,11 @@ The evangtermine TYPO3 extension was originally developed by:
 
 Evangelische Kirche von Westfalen
 Das Landeskirchenamt
+
 Arbeitsbereich Kommunikation
 
 
+
+---
+
+Update TYPO3 V12 & V13 by www.rootsystem.de
