@@ -62,16 +62,16 @@ plugin.tx_evangtermine {
 page.includeCSSLibs {
 
     # Default jQuery UI CSS
-    jQueryUICSS = EXT:evangtermine/Resources/Public/jquery-ui-1.11.4.custom/jquery-ui.min.css
+    #jQueryUICSS = EXT:evangtermine/Resources/Public/jquery-ui-1.11.4.custom/jquery-ui.min.css
 
     # Default CSS
     CSSFile = EXT:evangtermine/Resources/Public/CSS/default.css
 
     # Default jQuery
-    jQuery = EXT:evangtermine/Resources/Public/jquery-1.11.1.min.js
+    #jQuery = EXT:evangtermine/Resources/Public/jquery-1.11.1.min.js
 
     # Default jQuery UI, i18n and custom code
-    jQueryUI = EXT:evangtermine/Resources/Public/jquery-ui-1.11.4.custom/evangtermine.js
+    #jQueryUI = EXT:evangtermine/Resources/Public/jquery-ui-1.11.4.custom/evangtermine.js
 
 
 }
